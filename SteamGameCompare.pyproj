@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>54871424-75c8-4d13-ac07-f0908cb1be0c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>SteamGameCompare</Name>
+    <RootNamespace>SteamGameCompare</RootNamespace>
+    <InterpreterId>{bf2ce909-f6fb-46d1-819b-9fd0d50a1c61}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>lan-for-faen - Web Deploy</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="SteamGameCompare\__init__.py" />
+    <Compile Include="SteamGameCompare\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SteamGameCompare\" />
+    <Folder Include="SteamGameCompare\static\" />
+    <Folder Include="SteamGameCompare\static\content\" />
+    <Folder Include="SteamGameCompare\static\fonts\" />
+    <Folder Include="SteamGameCompare\static\scripts\" />
+    <Folder Include="SteamGameCompare\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lan-for-faen - Web Deploy.pubxml" />
+    <Content Include="requirements.txt" />
+    <Content Include="SteamGameCompare\static\content\bootstrap.css" />
+    <Content Include="SteamGameCompare\static\content\bootstrap.min.css" />
+    <Content Include="SteamGameCompare\static\content\site.css" />
+    <Content Include="SteamGameCompare\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="SteamGameCompare\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="SteamGameCompare\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="SteamGameCompare\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="SteamGameCompare\static\scripts\bootstrap.js" />
+    <Content Include="SteamGameCompare\static\scripts\bootstrap.min.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery-1.10.2.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="SteamGameCompare\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery.validate.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery.validate.min.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="SteamGameCompare\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="SteamGameCompare\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="SteamGameCompare\static\scripts\respond.js" />
+    <Content Include="SteamGameCompare\static\scripts\respond.min.js" />
+    <Content Include="SteamGameCompare\static\scripts\_references.js" />
+    <Content Include="SteamGameCompare\templates\about.html" />
+    <Content Include="SteamGameCompare\templates\contact.html" />
+    <Content Include="SteamGameCompare\templates\index.html" />
+    <Content Include="SteamGameCompare\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{bf2ce909-f6fb-46d1-819b-9fd0d50a1c61}</Id>
+      <BaseInterpreter>{b39d6d7a-0eff-427e-a56b-b9b3471b308d}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 32-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>
+      </PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

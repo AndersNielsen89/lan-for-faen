@@ -1,0 +1,51 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# PTVS analysis
+.ptvs/
+
+# Build results
+/bin/
+/obj/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Auto-generated virtual environment
+/env/
+
+# Auto-generated web.config
+/web.config
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store
+
+# npm dependencies
+node_modules
+
+# sass cache
+
+.sass-cache
+*.map
+
+# webpackbundle
+FlaskWebProject\static\build\js\bundle.min.js
+
+# SSIS files
+Picodat_Solcelle_LTK_IS/obj/Development/
+Picodat_Solcelle_LTK_IS/bin/Development/
+
+FlaskWebProject\static\src\cc\css_libs\neat
